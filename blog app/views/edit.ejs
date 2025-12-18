@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Post</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <h2>Edit Post</h2>
+
+  <form action="/update/<%= post.id %>" method="POST">
+    <label>Title</label><br>
+    <input type="text" name="title" value="<%= post.title %>" required>
+    <br><br>
+
+    <label>Content</label><br>
+    <textarea name="content" rows="6" required><%= post.content %></textarea>
+    <br><br>
+
+    <button type="submit">Update Post</button>
+  </form>
+
+  <br>
+  <a href="/">← Back to Home</a>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+    <title>Create New Post</title>
+    <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <h2>Create a New Blog Post</h2>        
+        <form action="/create" method ="POST">
+            <label for="title"></label>
+            <input type="text" name="title" required>
+            <br><br>
+            <label for="content"></label>
+            <textarea name="content" rows="6"></textarea>
+            <button type="submit">Create Post</button>
+        </form>
+
+        <a href="/">BACK TO HOME</a>
+
+
+
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create New Post</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <h1>Create New Post</h1>
+
+  <form action="/create" method="POST">
+    <label>Title</label><br>
+    <input type="text" name="title" required><br><br>
+
+    <label>Content</label><br>
+    <textarea name="content" rows="6" required></textarea><br><br>
+
+    <button type="submit">Create Post</button>
+  </form>
+
+  <br>
+  <a href="/">← Back to Home</a>
+
+</body>
+</html>
